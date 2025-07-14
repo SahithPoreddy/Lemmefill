@@ -1,0 +1,53 @@
+__label__middle_name Middle Name
+__label__last_name Last Name
+__label__present_address Present Address
+__label__present_address Current Address
+__label__permanent_address Permanent Address
+__label__country Country of Residence
+__label__country Country
+__label__state State of Residence
+__label__state State
+__label__phone Phone Number
+__label__phone Contact Number
+__label__gender Gender
+__label__age Age
+__label__school_name School Name
+__label__school_name Secondary School
+__label__school_year Year of Graduation
+__label__school_year School Graduation Year
+__label__school_grade School CGPA
+__label__school_grade School Percentage
+__label__school_stream School Stream
+__label__junior_college_name Junior College Name
+__label__junior_college_name College Name
+__label__junior_college_start_year Junior College Start Year
+__label__junior_college_end_year Junior College End Year
+__label__junior_college_grade Junior College CGPA
+__label__junior_college_grade Junior College Percentage
+__label__junior_college_stream Junior College Stream
+__label__degree1_name Degree 1 Institution
+__label__degree1_name Degree 1 Name
+__label__degree1_start_year Degree 1 Start Year
+__label__degree1_end_year Degree 1 End Year
+__label__degree1_grade Degree 1 CGPA
+__label__degree1_grade Degree 1 Percentage
+__label__degree1_major Degree 1 Major
+__label__degree2_name Degree 2 Institution
+__label__degree2_name Degree 2 Name
+__label__degree2_start_year Degree 2 Start Year
+__label__degree2_end_year Degree 2 End Year
+__label__degree2_grade Degree 2 CGPA
+__label__degree2_grade Degree 2 Percentage
+__label__degree2_major Degree 2 Major
+__label__job1_company Job 1 Company
+__label__job1_company First Job Company
+__label__job1_role Job 1 Role
+__label__job1_start_date Job 1 Start Date
+__label__job1_end_date Job 1 End Date
+__label__job1_domain Job 1 Domain
+__label__job2_company Job 2 Company
+__label__job2_company Second Job Company
+__label__job2_role Job 2 Role
+__label__job2_start_date Job 2 Start Date
+__label__job2_end_date Job 2 End Date
+__label__job2_domain Job 2 Domain

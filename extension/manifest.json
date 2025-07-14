@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AI Autofill",
+  "version": "1.0",
+  "description": "A lightweight AI-powered Chrome extension to autofill form fields (name, address, education, jobs) using FastText.js.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["<all_urls>", "file:///*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>", "file:///*"],
+      "js": ["fasttext.js", "content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

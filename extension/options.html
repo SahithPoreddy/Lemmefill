@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Autofill Options</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      h1,
+      h2 {
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 600px;
+      }
+      label {
+        font-weight: bold;
+      }
+      input,
+      select {
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      button {
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .section {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      .add-button {
+        background-color: #2196f3;
+        margin-top: 10px;
+      }
+      .add-button:hover {
+        background-color: #1976d2;
+      }
+      #status {
+        margin-top: 10px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AI Autofill Options</h1>
+    <form id="userDataForm">
+      <h2>Personal Details</h2>
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" /><br />
+      <label for="middle_name">Middle Name:</label>
+      <input type="text" id="middle_name" name="middle_name" /><br />
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" /><br />
+      <label for="present_address">Present Address:</label>
+      <input type="text" id="present_address" name="present_address" /><br />
+      <label for="same_address"
+        >Permanent Address same as Present Address:</label
+      >
+      <input type="checkbox" id="same_address" name="same_address" /><br />
+      <label for="permanent_address">Permanent Address:</label>
+      <input
+        type="text"
+        id="permanent_address"
+        name="permanent_address"
+      /><br />
+      <label for="country">Country of Residence:</label>
+      <input type="text" id="country" name="country" /><br />
+      <label for="state">State of Residence:</label>
+      <input type="text" id="state" name="state" /><br />
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" /><br />
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option></select
+      ><br />
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" /><br />
+
+      <h2>School Education</h2>
+      <div class="section">
+        <label for="school_name">School Name:</label>
+        <input type="text" id="school_name" name="school_name" /><br />
+        <label for="school_year">Year of Graduation:</label>
+        <input type="number" id="school_year" name="school_year" /><br />
+        <label for="school_grade">CGPA/Percentage:</label>
+        <input type="text" id="school_grade" name="school_grade" /><br />
+        <label for="school_stream">Stream:</label>
+        <input type="text" id="school_stream" name="school_stream" /><br />
+      </div>
+
+      <h2>Junior College</h2>
+      <div class="section">
+        <label for="junior_college_name">Junior College Name:</label>
+        <input
+          type="text"
+          id="junior_college_name"
+          name="junior_college_name"
+        /><br />
+        <label for="junior_college_start_year">Start Year:</label>
+        <input
+          type="number"
+          id="junior_college_start_year"
+          name="junior_college_start_year"
+        /><br />
+        <label for="junior_college_end_year">End Year:</label>
+        <input
+          type="number"
+          id="junior_college_end_year"
+          name="junior_college_end_year"
+        /><br />
+        <label for="junior_college_grade">CGPA/Percentage:</label>
+        <input
+          type="text"
+          id="junior_college_grade"
+          name="junior_college_grade"
+        /><br />
+        <label for="junior_college_stream">Stream:</label>
+        <input
+          type="text"
+          id="junior_college_stream"
+          name="junior_college_stream"
+        /><br />
+      </div>
+
+      <h2>Degrees</h2>
+      <div id="degrees_container"></div>
+      <button type="button" class="add-button" onclick="addDegree()">
+        Add Degree
+      </button>
+
+      <h2>Job Experience</h2>
+      <div id="jobs_container"></div>
+      <button type="button" class="add-button" onclick="addJob()">
+        Add Job
+      </button>
+
+      <button type="submit">Save</button>
+    </form>
+    <div id="status"></div>
+    <script src="options.js"></script>
+  </body>
+</html>

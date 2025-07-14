@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Form for AI Autofill</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .form-section {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test Form for AI Autofill Extension</h1>
+
+  <div class="form-section">
+    <h2>Personal Details</h2>
+    <label for="full_name">Full Name</label>
+    <input type="text" id="full_name" name="name" placeholder="Enter your full name">
+
+    <label for="email_address">Email Address</label>
+    <input type="email" id="email_address" name="email" placeholder="Enter your email">
+
+    <label for="phone_number">Phone Number</label>
+    <input type="tel" id="phone_number" name="phone" placeholder="Enter your phone number">
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+
+    <label for="zip_code">Zip Code</label>
+    <input type="text" id="zip_code" name="pincode" placeholder="Enter your zip/pin code">
+
+    <label for="state">State</label>
+    <input type="text" id="state" name="state" placeholder="Enter your state">
+
+    <label for="country">Country</label>
+    <input type="text" id="country" name="country" placeholder="Enter your country">
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="">Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" placeholder="Enter your age">
+
+    <label for="nationality">Nationality</label>
+    <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality">
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" placeholder="Enter your date of birth">
+  </div>
+
+  <div class="form-section">
+    <h2>High School Details</h2>
+    <label for="hs_year">Year of Passing</label>
+    <input type="number" id="hs_year" name="high_school_year" placeholder="Enter year of passing">
+
+    <label for="hs_grade">Grade/CGPA</label>
+    <input type="text" id="hs_grade" name="high_school_grade" placeholder="Enter grade or CGPA">
+
+    <label for="hs_institution">Institution Name</label>
+    <input type="text" id="hs_institution" name="high_school_institution" placeholder="Enter institution name">
+
+    <label for="hs_stream">Stream</label>
+    <input type="text" id="hs_stream" name="high_school_stream" placeholder="Enter stream (e.g., Science, Arts)">
+  </div>
+
+  <div class="form-section">
+    <h2>Junior College Details</h2>
+    <label for="jc_year">Year of Passing</label>
+    <input type="number" id="jc_year" name="junior_college_year" placeholder="Enter year of passing">
+
+    <label for="jc_grade">Grade/CGPA</label>
+    <input type="text" id="jc_grade" name="junior_college_grade" placeholder="Enter grade or CGPA">
+
+    <label for="jc_institution">Institution Name</label>
+    <input type="text" id="jc_institution" name="junior_college_institution" placeholder="Enter institution name">
+
+    <label for="jc_stream">Stream</label>
+    <input type="text" id="jc_stream" name="junior_college_stream" placeholder="Enter stream (e.g., Science, Commerce)">
+  </div>
+
+  <div class="form-section">
+    <h2>Degree Details</h2>
+    <label for="degree_year">Year of Passing</label>
+    <input type="number" id="degree_year" name="degree_year" placeholder="Enter year of passing">
+
+    <label for="degree_grade">CGPA/Percentage</label>
+    <input type="text" id="degree_grade" name="degree_grade" placeholder="Enter CGPA or percentage">
+
+    <label for="degree_institution">Institution Name</label>
+    <input type="text" id="degree_institution" name="degree_institution" placeholder="Enter institution name">
+
+    <label for="degree_major">Major</label>
+    <input type="text" id="degree_major" name="degree_major" placeholder="Enter your major">
+  </div>
+
+  <div class="form-section">
+    <h2>Job Experience</h2>
+    <label for="job_start">Start Date</label>
+    <input type="date" id="job_start" name="job_start_date" placeholder="Enter start date">
+
+    <label for="job_end">End Date</label>
+    <input type="date" id="job_end" name="job_end_date" placeholder="Enter end date">
+
+    <label for="job_role">Role</label>
+    <input type="text" id="job_role" name="job_role" placeholder="Enter job role">
+
+    <label for="job_company">Company Name</label>
+    <input type="text" id="job_company" name="job_company" placeholder="Enter company name">
+
+    <label for="job_location">Location</label>
+    <input type="text" id="job_location" name="job_location" placeholder="Enter job location">
+  </div>
+
+  <button type="submit">Submit</button>
+</body>
+</html>
